@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.graph.controls.VisualNodeBody?>
+<?import com.graph.controls.VisualNodeHeader?>
+<?import javafx.scene.layout.VBox?>
+<fx:root fx:id="node" type="VBox" styleClass="visual-node" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<VisualNodeHeader fx:id="header" styleClass="visual-node-header"/>
+		<VisualNodeBody fx:id="body" styleClass="visual-node-body"/>
+	</children>
+</fx:root>

@@ -1,0 +1,111 @@
+.visual-node {
+    -fx-border-color: silver;
+    -fx-background-color: rgba(0, 0, 0, 0.7);
+    -fx-border-width: 2px;
+    -fx-padding: 5 5 5 5;
+    -fx-spacing: 5;
+    -fx-alignment: center;
+    -fx-font-family: "DejaVu Sans";
+}
+
+.visual-node:hover {
+    -fx-border-color: whitesmoke;
+}
+
+.visual-node.focused {
+    -fx-border-color: #00de98;
+    /*-fx-border-color: #90de00;*/
+}
+
+/* Node Parts Styles */
+.visual-node .visual-node-header {
+    -fx-alignment: center-left;
+    -fx-spacing: 5;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: silver;
+    -fx-padding: 0 0 5 0;
+}
+
+.visual-node .visual-node-header .label {
+    -fx-text-fill: silver;
+    -fx-font-weight: bold;
+}
+
+.visual-node .visual-node-header .button {
+    -fx-text-fill: silver;
+    -fx-background-color: none;
+    -fx-font-weight: bold;
+    -fx-padding: 1;
+}
+
+.visual-node .visual-node-body {
+    -fx-spacing: 5;
+}
+
+.visual-node .visual-node-body .text-field {
+    -fx-background-color: none;
+    -fx-text-fill: silver;
+    -fx-max-width: 100;
+}
+
+.visual-node.focused .visual-node-body .text-field {
+    -fx-background-color: silver;
+    -fx-text-fill: black;
+}
+
+.visual-node .visual-node-body .label {
+    -fx-background-color: none;
+    -fx-text-fill: silver;
+    -fx-text-alignment: right;
+}
+
+/* Components */
+.visual-node .visual-node-body .visual-node-component #display {
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+    -fx-font-size: 24px;
+}
+
+.visual-node .visual-node-body .visual-node-component #label {
+    -fx-text-alignment: center;
+    -fx-font-size: 12px;
+}
+
+/* Ports */
+.visual-node-port {
+    -fx-spacing: 5px;
+    -fx-max-height: 100%;
+}
+
+.visual-node-port.inbound {
+    -fx-padding: 0 5px 0 2px;
+}
+
+.visual-node-port.outbound {
+    -fx-padding: 0 2px 0 5px;
+}
+
+.visual-node-port.inbound #pin {
+    /*-fx-fill: #92f24e;*/
+    -fx-fill: #874ef2;
+}
+
+.visual-node-port.inbound #title {
+    -fx-font-size: 10px;
+}
+
+.visual-node-port.outbound #pin {
+    -fx-fill: #4ef2d2;
+}
+
+.visual-node-port.outbound #title {
+    -fx-font-size: 10px;
+}
+
+.visual-node-port.success #pin {
+    -fx-fill: #37ff00;
+}
+
+.visual-node-port.error #pin {
+    -fx-fill: #ff0000;
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<fx:root type="GridPane" styleClass="visual-node-component" alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+	<Label fx:id="label" textAlignment="CENTER"/>
+	<padding>
+		<Insets left="5" right="5"/>
+	</padding>
+</fx:root>
